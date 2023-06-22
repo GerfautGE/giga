@@ -15,7 +15,7 @@ make sure you have cargo installed on your machine.
 clone the repository:
 
 ```Bash
-git clone https://github.com/florentinl/giga.git && cd giga
+git clone https://github.com/GerfautGE/giga.git && cd giga
 ````
 
 install the binary:
@@ -61,14 +61,3 @@ To toggle modes:
 - in **INSERT** -> `Esc`-> **NORMAL**
 - in **RENAME** -> `Enter` -> **NORMAL**
 
-## TODO
-
-As giga is under development, we need to fix these:
-
-- [x] UTF-8 support
-- [x] Rename a file
-- [ ] Syntax Highlighting
-- [x] Refresh only lines changed
-- [x] Transform tabs in spaces
-- [ ] Unit Testing 100%
-- [ ] Documentation
