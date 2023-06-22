@@ -50,14 +50,15 @@ It will create a new file called NewFile.
 
 Giga is a modal based test editor. You have three modes:
 
-- NORMAL
-- INSERT
-- RENAME
+- **NORMAL**
+- **INSERT**
+- **RENAME**
 
 To toggle modes:
-
-- in **NORMAL** -> `i` -> **INSERT**
-- in **NORMAL** -> `R` -> **RENAME**
-- in **INSERT** -> `Esc`-> **NORMAL**
-- in **RENAME** -> `Enter` -> **NORMAL**
-
+```mermaid
+stateDiagram-v2
+    INSERT --> NORMAL : Esc
+    NORMAL --> INSERT : i
+    RENAME --> NORMAL : Enter
+    NORMAL --> RENAME : R
+```
