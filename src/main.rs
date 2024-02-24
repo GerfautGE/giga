@@ -7,7 +7,7 @@
 //! cargo doc --open
 //! ```
 //!
-//! The doc is also available as a [Github page](https://florentinl.github.io/giga/).
+//! The doc is also available as a [Github page](https://gerfautGE.github.io/giga/).
 
 mod editor;
 

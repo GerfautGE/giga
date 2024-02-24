@@ -8,18 +8,9 @@ A HeavyWeight text editor written in Rust
 
 This Repo is a fork from the [original project](https://github.com/florentinl/giga) which was a project for Rust course from CentraleSupélec.
 
-```mermaid
-gitGraph
-    commit id: "Some work"
-    commit id: "final" tag: "v0.3.0"
-    branch "This Repo"
-    commit id: "updates"
-    commit
-```
-
 ## User Interface
 
-![Giga](https://raw.githubusercontent.com/florentinl/giga/main/img/video.gif)
+![Giga](https://raw.githubusercontent.com/gerfautGE/giga/main/img/video.gif)
 
 ## Installation
 

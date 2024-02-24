@@ -18,27 +18,32 @@ use crate::editor::Mode;
 /// Commands that can be executed by the editor
 #[derive(Debug, PartialEq)]
 pub enum Command {
-    /// Quit the editor
+    /// Quit the editor and clean terminal state
     Quit,
-    /// Move the cursor by dx, dy
+    /// Move the cursor by dx, dy (positive values move down and right)
+    /// ```text
+    ///   ↑
+    /// ← x → (dx)
+    ///   ↓ (dy)
+    /// ```
     Move(isize, isize),
-    /// Save the file
+    /// Save the file to disk with the current name
     Save,
-    /// Rename the file
+    /// Rename the file with a new name (if the Option is None, the user will be prompted for a new name)
     Rename(Option<char>),
-    /// Toggle mode
+    /// Toggle mode (normal/insert)
     ToggleMode,
-    /// Toggle rename
+    /// Toggle rename (rename/normal)
     ToggleRename,
-    /// Insert a character
+    /// Insert a character at the cursor position
     Insert(char),
-    /// Delete a character
+    /// Delete a character at the cursor position
     Delete,
-    /// Insert a new line
+    /// Insert a new line at the cursor position
     InsertNewLine,
-    /// CommandBlock
+    /// CommandBlock is a composite command that can be executed as a sequence of commands
     CommandBlock(Vec<Command>),
-    /// Delete a line
+    /// Delete a line at the cursor position
     DeleteLine,
 }
 
